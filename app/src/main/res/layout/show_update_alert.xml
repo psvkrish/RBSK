@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/covid_green"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_logout_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Update Available"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_logout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="New update available..! Please update from the Google Play Store..."
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/logout_yes"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_background"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="80dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/logout_no"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_rouond_grey"
+                    android:text="Cancel"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/CardTotal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginTop="15dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/LL_Total"
+        android:background="@drawable/border_green"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--//LL0-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Mapped To"
+                            android:textColor="@color/quantum_grey400"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TvPid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Name"
+                            android:textColor="@color/quantum_grey400"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LLGeoTagPositive"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp">
+                    <ImageView
+                        android:src="@drawable/geotag"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"></ImageView>
+                    <TextView
+                        android:textColor="@color/app_color"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Geo Tag"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--//LL1-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Age"
+                        android:textColor="@color/quantum_grey400"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/TvAge"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Gender"
+                        android:textColor="@color/quantum_grey400"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/TvGender"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--//LL2-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Mobile"
+                        android:textColor="@color/quantum_grey400"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/TvMobile"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Address"
+                        android:textColor="@color/quantum_grey400"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/TvAddress"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

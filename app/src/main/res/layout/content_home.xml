@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="0sp"
+        >
+
+        <LinearLayout
+            android:id="@+id/LL_Clinics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <!--//ll1-->
+            <LinearLayout
+                android:id="@+id/LL_1"
+                android:layout_marginTop="0sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <!--//Mental health-->
+                <RelativeLayout
+                    android:id="@+id/R_LMosquit1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_grey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/Img1"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="70sp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/grp_2512"
+                        android:visibility="visible"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TvTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Img1"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Mobile Health Team"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/R_L1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_grey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/Img2"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="70sp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/group1425"
+                        android:visibility="visible"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TvTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Img2"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Screened Student Height and Weight"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            <!--ll2-->
+            <LinearLayout
+                android:id="@+id/LL_2"
+                android:layout_marginTop="0sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <!--//Mental health-->
+                <RelativeLayout
+                    android:id="@+id/R_L2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_grey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/Img3"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="70sp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/g_img2513"
+                        android:visibility="visible"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TvTitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Img3"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Upload Data To Server"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/R_L4"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_grey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/Img4"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="70sp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/group1"
+                        android:visibility="visible"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TvTitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Img4"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="MIS Reports"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"></TextView>
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
